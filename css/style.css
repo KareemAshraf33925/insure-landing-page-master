@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --DarkViolet: hsl(256, 26%, 20%);
+    --GrayishBlue: hsl(216, 30%, 68%);
+    --VeryDarkViolet: hsl(270, 9%, 17%);
+    --DarkGrayishViolet: hsl(273, 4%, 51%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+body{
+    font-family: "Karla", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* start-header */
+
+header .container nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 20px 100px;
+}
+header .container nav .items{
+    list-style: none;
+}
+header .container nav .items .item{
+    display: inline-block;
+    margin-right: 30px;
+}
+header .container nav .items .item a{
+    text-decoration: none;
+    font-family: "Karla";
+    font-weight: 400;
+    font-size: 16px;
+    color: var(  --VeryDarkViolet);
+    cursor: pointer;
+}
+header .container nav .items .item:last-child{
+    border: 2px solid #000;
+    padding:5px;
+    transition: all 0.6s;
+}
+header .container nav .items .item:last-child:hover{
+    background-color:var(  --VeryDarkViolet) ;
+}
+header .container nav .items .item:last-child:hover a{
+    color: var(--VeryLightGray);
+}
+header .container nav .icon-hamburger{
+    border: 1px solid #000;
+    margin-right:30px;
+    display: none;
+}
+header .container nav .icon-close{
+    border: 1px solid #000;
+    display: none;
+}
+header .container .head-content{
+    background-color: var( --DarkViolet);
+    display: grid;
+    grid-template-columns: 50% 20% 30%;
+    height: 620px;
+    padding: 100px 0; 
+}
+header .container .head-content .humanizing{
+    position: relative;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+header .container .head-content .humanizing .line{
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    border-radius:50px;
+    background-color: var(--VeryLightGray);
+    position: absolute;
+    left:0px;
+}
+header .container .head-content .humanizing h1{
+    font-family: "DM Serif Display";
+    font-weight: 700;
+    color: var(--VeryLightGray);
+    font-size: 45px;
+}
+header .container .head-content .humanizing p{
+    font-family: "Karla";
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--VeryLightGray);
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+header .container .head-content .humanizing .btn_view{
+    background: transparent;
+    border: 1px solid var(--VeryLightGray);
+    font-family: "Karla";
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--VeryLightGray);
+    padding: 8px 30px;
+    margin:20px 0px 20px 0px ;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+header .container .head-content .humanizing .btn_view:hover{
+    background-color: var(--VeryLightGray);
+    color: var(--DarkGrayishViolet);
+}
+
+header .container .head-content picture .image-intro-desktop{
+  position: relative;
+  top: 40px;
+}
+header .container .head-content picture .bg-pattern-intro-right-desktop{
+    position: relative;
+    z-index: 1;
+    bottom: 100px;
+}
+header .container .img_bottom picture .bg-pattern-intro-left-desktop{
+    position: relative;
+    z-index: 1;
+    bottom: 200px;
+}
+/* end-header */
+/* start-main */
+    main .container{
+        margin: 20px 100px;
+    }
+    main .container .propertise .line{
+        display: inline-block;
+        width: 100px;
+        height: 2px;
+        border-radius:50px;
+        background-color: var(--VeryLightGray);
+        position: absolute;
+        left:0px;
+    }
+    main .container .propertise h2{
+        font-family: "DM Serif Display";
+        font-weight: 700;
+        color: var(--VeryDarkViolet);
+        font-size:45px;
+    }
+    main .container .propertise .conteny-items{
+        display: grid;
+        grid-template-columns: repeat(3,minmax(320px,1fr));
+        gap: 30px;
+        margin: 60px 0;
+    }
+    main .container .propertise .conteny-items .item img{
+        width: 60px;
+    }
+    main .container .propertise .conteny-items .item h3{
+        font-family: "DM Serif Display";
+        font-weight: 700;
+        color: var(--VeryDarkViolet);
+        margin: 20px 0;
+    }
+    main .container .propertise .conteny-items .item p{
+        font-family: "DM Serif Display";
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--GrayishBlue);
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+/* end-main */
+/* start-find out more */
+.findoutmore .container{
+    margin: 200px 100px;
+}
+.findoutmore .container .content{
+    background-color: var(--DarkViolet);
+    background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 450px;
+    height: 300px;
+    border-radius: 5px;
+}
+.findoutmore .container .content h3{
+    font-family: "DM Serif Display";
+    font-weight: 700;
+    color: var(--VeryLightGray);
+    font-size: 40px;
+    margin-left:100px;
+}
+.findoutmore .container .content .work{
+    background: transparent;
+    border: 1px solid var(--VeryLightGray);
+    font-family: "Karla";
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--VeryLightGray);
+    padding: 8px 30px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+.findoutmore .container .content .work:hover{
+    background-color: var(--VeryLightGray);
+    color: var(--DarkGrayishViolet);
+}
+/* end-find out more */
+/* start-footer */
+footer{
+    background-color: var(--VeryLightGray);
+    background-image: url(../images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left/top;
+    background-size: 40%;
+
+}
+footer .container{
+    margin: 0px 100px;
+}
+footer .container .nav-foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    border-bottom: 1px solid  #e2e0e0;
+}
+footer .container .nav-foot .items{
+    list-style: none;
+}
+footer .container .nav-foot .items .item{
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+footer .container .cols{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 200px;
+}
+footer .container .cols ul{
+    list-style: none;
+}
+footer .container .cols ul li{
+    font-family: "Karla";
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--VeryDarkViolet);
+    margin: 20px 0;
+    cursor: pointer;
+}
+footer .container .cols ul:nth-child(3){
+    margin-bottom: 40px;
+}
+footer .container .cols ul:last-child{
+    margin-bottom: 40px;
+}
+footer .container .cols ul li:first-child{
+    font-family: "Karla";
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--DarkGrayishViolet);
+}
+
+
+/* end-footer */
+/* media-query */
+@media(max-width:768px){
+    header .container .head-content .humanizing h1 {
+        font-size: 37px;
+      }
+      header .container .head-content picture .bg-pattern-intro-right-desktop {
+        bottom: 0px;
+        left: 106px;
+        top: 409px;
+      }
+      header .container .img_bottom picture .bg-pattern-intro-left-desktop {
+        bottom: 620px;
+      }
+      main .container .propertise .conteny-items {
+        grid-template-columns: repeat(3,minmax(200px,1fr));
+      }
+      .findoutmore .container .content {
+        gap: 41px;
+        height:300px;
+      }
+      .findoutmore .container .content h3 {
+        font-size: 24px;
+      }
+      .findoutmore .container {
+        margin: 100px 100px;
+      }
+      footer .container .cols {
+        gap: 71px;
+      }
+}
+@media(max-width:480px){
+    header .container nav .icon-hamburger {
+        border: 1px solid #000;
+        margin-right: 0;
+        display: block;
+        cursor: pointer;
+      }
+    header .container nav .items {
+        list-style: none;
+        background-color: var(--VeryDarkViolet);
+        position: fixed;
+        top: 74px;
+        left: 0;
+        height: 500px;
+        width: 100%;
+        z-index: 10;
+        opacity: 0;
+        transition: all 0.6s;
+        background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+        background-repeat: no-repeat;
+        background-position:right;
+        background-size: 70%;
+      }
+      header .container nav .items .item {
+        display: block;
+        text-align: center;
+        margin: 40px 0;
+        cursor: pointer;
+      }
+      header .container nav .items .item a {
+        text-decoration: none;
+        font-family: "Karla";
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--VeryLightGray);
+        cursor: pointer;
+      }
+      header .container nav .items .item:last-child {
+        border: 2px solid #fff;
+        width: 300px;
+        margin-left: 100px;
+      }
+      header .container nav .icon-close {
+        cursor: pointer;
+      }
+      header .container .head-content {
+        background-color: var( --DarkViolet);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 0px 0;
+      }
+      header .container .head-content picture .image-intro-desktop {
+        position: relative;
+        top: -334px;
+        width: 480px;
+      }
+      header .container .img_bottom picture .bg-pattern-intro-left-desktop {
+        bottom: 392px;
+      }
+      header .container .head-content .humanizing {
+        position: relative;
+        margin-top: -277px;
+        margin-left: 0;
+        text-align: center;
+      }
+      header .container .head-content .humanizing .line {
+        display: none;
+      }
+      header .container .head-content picture .bg-pattern-intro-right-desktop {
+        bottom: 0px;
+        left: 178px;
+        top: 870px;
+      }
+      main .container .propertise h2 {
+        font-size: 40px;
+      }
+      main .container .propertise .conteny-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
+      main .container .propertise .line {
+        width: 150px;
+        height: 3px;
+        background-color: hsl(0, 11.7%, 76.5%);
+        left: 174px;
+        bottom: 33px;
+      }
+      .findoutmore .container {
+        margin: 100px 0px;
+      }
+      .findoutmore .container .content {
+        gap: 68px;
+        height: 300px;
+        flex-direction: column;
+        text-align: center;
+      }
+      .findoutmore .container .content h3 {
+        font-size: 40px;
+        margin-left: 15px;
+        margin-top: 55px;
+      }
+      footer .container .nav-foot {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+      }
+      footer .container .nav-foot .items {
+        margin-left: 31px;
+      }
+      footer .container .cols {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:0px;
+        flex-direction: column;
+      }
+      footer .container .cols ul:nth-child(3) {
+        margin-right: 0px;
+      }
+      footer .container .cols ul:last-child {
+        margin-right: 0px;
+      }
+      footer .container .cols ul {
+        text-align: center;
+      }
+}
+@media(max-width:375px){
+    header .container nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 20px 20px;
+      }
+      header .container nav .icon-hamburger {
+        margin-left: 190px;
+      }
+      header .container nav .icon-close {
+        margin-left: 190px;
+      }
+      header .container nav .items .item:last-child {
+        margin-left: 53px;
+      }
+      .findoutmore .container .content {
+        height: 345px;
+      }
+      footer .container .nav-foot .items {
+        margin-left: 0px;
+      }
+      footer .container .nav-foot .items .item {
+        margin-right: 10px;
+      }
+      header .container .head-content picture .image-intro-desktop {
+        width: 375px;
+      }
+      header .container .head-content picture .bg-pattern-intro-right-desktop {
+        top: 778px;
+      }
+      header .container .img_bottom picture .bg-pattern-intro-left-desktop {
+        bottom: 419px;
+      }
+      main .container .propertise .line {
+        left: 110px;
+        bottom: 87px;
+      }
+      main .container .propertise h2 {
+        font-size: 25px;
+      }
+      main .container .propertise .conteny-items .item p {
+        width: 350px;
+      }
+     
+}
+@media(max-width:320px){
+    header .container nav .items .item {
+        margin: 40px 59px 0 0;
+      }
+      header .container nav .icon-hamburger {
+        margin-left: 135px;
+      }
+      header .container nav .icon-close {
+        margin-left: 135px;
+      }
+      header .container nav .items .item:last-child {
+        margin-left: 12px;
+      }
+      footer .container .nav-foot .items .item {
+        margin-right: 3px;
+      }
+      header .container .head-content picture .image-intro-desktop {
+        width: 320px;
+      }
+      header .container .head-content .humanizing p {
+        font-size: 15px;
+      }
+      main .container .propertise h2 {
+        font-size: 17px;
+      }
+      main .container .propertise .line {
+        left: 92px;
+        bottom: 87px;
+      }
+      main .container .propertise .conteny-items .item h3 {
+        font-size: 17px;
+      }
+      main .container .propertise .conteny-items .item p {
+        width: 300px;
+      }
+}
+@media(max-width:240px){
+    header .container nav .icon-hamburger {
+        margin-left: 60px;
+      }
+      header .container nav .icon-close {
+        margin-left: 60px;
+      }
+      header .container .head-content picture .image-intro-desktop {
+        width: 240px;
+      }
+      header .container nav .items .item {
+        margin: 40px 101px 0 0;
+      }
+      header .container nav .items .item:last-child {
+        margin-left: 53px;
+        width: 150px;
+      }
+      header .container .img_bottom picture .bg-pattern-intro-left-desktop {
+        bottom: 406px;
+      }
+      header .container .head-content .humanizing h1 {
+        font-size: 25px;
+      }
+      header .container .head-content .humanizing p {
+        font-size: 13px;
+      }
+      header .container .head-content picture .bg-pattern-intro-right-desktop {
+       opacity: 0;
+      }
+      main .container .propertise .line {
+        left: 58px;
+        bottom: 269px;
+      }
+      main .container .propertise .conteny-items .item p {
+        width: 220px;
+      }    
+      .findoutmore .container .content {
+        height: 258px;
+      }
+      .findoutmore .container .content h3 {
+        font-size: 24px;
+        margin-left: 10px;
+        margin-top: 55px;
+      }
+      footer .container .cols ul {
+        margin-right: 21px;
+      }
+}
